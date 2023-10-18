@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Phoneix CV/TrendLine2/app/src/main/res/drawable-v24/nowifi.xml" value="0.265" />
+        <entry key="..\:/Phoneix CV/TrendLine2/app/src/main/res/layout/activity_main.xml" value="0.346875" />
+        <entry key="..\:/Phoneix CV/TrendLine2/app/src/main/res/layout/fragment_article.xml" value="0.346875" />
+        <entry key="..\:/Phoneix CV/TrendLine2/app/src/main/res/layout/fragment_breaking_news.xml" value="0.346875" />
+        <entry key="..\:/Phoneix CV/TrendLine2/app/src/main/res/layout/fragment_save_news.xml" value="0.346875" />
+        <entry key="..\:/Phoneix CV/TrendLine2/app/src/main/res/layout/sample_news_list.xml" value="0.3458333333333333" />
+        <entry key="..\:/Phoneix CV/TrendLine2/app/src/main/res/menu/menu.xml" value="0.346875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

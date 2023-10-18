@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentBreakingNews">
+
+    <fragment
+        android:id="@+id/fragmentBreakingNews"
+        android:name="com.example.trendline.screens.FragmentBreakingNews"
+        android:label="fragment_breaking_news"
+        tools:layout="@layout/fragment_breaking_news" >
+        <action
+            android:id="@+id/action_fragmentBreakingNews_to_fragmentSaveNews"
+            app:destination="@id/fragmentSaveNews"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/fragmentSaveNews"
+            />
+        <action
+            android:id="@+id/action_fragmentBreakingNews_to_fragmentArticle"
+            app:destination="@id/fragmentArticle"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/fragmentArticle"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentArticle"
+        android:name="com.example.trendline.screens.FragmentArticle"
+        android:label="fragment_article"
+        tools:layout="@layout/fragment_article" >
+        <action
+            android:id="@+id/action_fragmentArticle_to_fragmentSaveNews"
+            app:destination="@id/fragmentSaveNews"
+
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/fragmentSaveNews"
+            />
+        <action
+            android:id="@+id/action_fragmentArticle_to_fragmentBreakingNews"
+            app:destination="@id/fragmentBreakingNews"
+
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/fragmentBreakingNews"
+            />
+        <argument
+            android:name="article"
+            app:argType="com.example.trendline.model.Article" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSaveNews"
+        android:name="com.example.trendline.screens.FragmentSaveNews"
+        android:label="fragment_save_news"
+        tools:layout="@layout/fragment_save_news" >
+        <action
+            android:id="@+id/action_fragmentSaveNews_to_fragmentBreakingNews"
+            app:destination="@id/fragmentBreakingNews" />
+        <action
+            android:id="@+id/action_fragmentSaveNews_to_fragmentArticle"
+            app:destination="@id/fragmentArticle" />
+    </fragment>
+</navigation>
